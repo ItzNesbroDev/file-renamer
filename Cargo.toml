@@ -2,6 +2,9 @@
 name = "file-renamer"
 version = "0.1.0"
 edition = "2021"
+authors = ["Nesbeer (ItzNesbro) <itznesbro.proton.me>"]
+description = "A  file renamer written in Rust. Renames a batch of files according to user-specified rules, such as capitalization, lowercasing, and string replacement"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
