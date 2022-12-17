@@ -20,6 +20,18 @@ fn main() -> Result<(), Box<dyn Error>> {
         let new_name = match rule {
             "uppercase" => name.to_uppercase(),
             "lowercase" => name.to_lowercase(),
+            "first-letter-uppercase" => {
+                let mut chars = name.chars();
+                let first_char = chars.next().unwrap();
+                let rest_of_name: String = chars.collect();
+                format!("{}{}", first_char.to_uppercase(), rest_of_name)
+            }
+            "first-letter-lowercase" => {
+                let mut chars = name.chars();
+                let first_char = chars.next().unwrap();
+                let rest_of_name: String = chars.collect();
+                format!("{}{}", first_char.to_lowercase(), rest_of_name)
+            }
             _ => name.to_owned(),
         };
         let new_path = old_path.with_file_name(format!("{}{}", new_name, extension));
@@ -28,3 +40,4 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     Ok(())
 }
+
