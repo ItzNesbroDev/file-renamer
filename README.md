@@ -4,7 +4,14 @@ file-renamer is a command-line tool for renaming files in a directory according 
 # Installation
 To install file-renamer, you will need to have Rust installed on your machine. You can install Rust using rustup.
 
-Once Rust is installed, clone this repository and build file-renamer using Cargo:
+Once Rust is installed, use `cargo` to install
+
+```bash
+$ cargo install file-renamer
+```
+
+## Build from source
+clone this repository and build file-renamer using Cargo:
 
 ```bash
 $ git clone https://github.com/ItzNesbroDev/file-renamer.git
