@@ -31,6 +31,7 @@ file-renamer path/to/directory uppercase
 The first option specifies the path to the directory containing the files you want to rename, and the second option specifies the transformation to apply to the file names. Possible values for second are uppercase and lowercase.
 
 # Examples
+
 To rename all the files in the documents directory to uppercase:
 
 ```bash
@@ -41,6 +42,18 @@ To rename all the files in the downloads directory to lowercase:
 
 ```bash
 file-renamer downloads lowercase
+```
+
+To rename all the files in the pictures directory with the first letter in the file name in uppercase:
+
+```bash
+file-renamer pictures first-letter-uppercase
+```
+
+To rename all the files in the music directory with the first letter in the file name in lowercase:
+
+```bash
+file-renamer music first-letter-lowercase
 ```
 
 # License
